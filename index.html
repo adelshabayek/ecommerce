@@ -1,114 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern eCommerce</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png" />
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="eCommerce " />
+    <meta
+      name="description"
+      content="Adel Shabayek is a creative web designer and developer specializing in modern, responsive websites and digital experiences — showcased in his professional portfolio.  "
+    />
+    <meta
+      property="og:image"
+      content="https://adelshabayek.vercel.app/images/me.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://adelshabayek.vercel.app/images/me.png"
+    />
+    <meta
+      id="fbImage"
+      data-page-subject="true"
+      property="og:image"
+      content="https://adelshabayek.vercel.app/images/me.png"
+    />
+    <meta property="og:image:width" content="614" />
+    <meta property="og:image:height" content="430" />
+    <meta property="og:site_name" content="Adel Shabayek" />
+    <meta property="og:url" content="https://adelshabayek.vercel.app/" />
+    <meta property="og:title" content="Adel Shabayek | Portfolio" />
+    <meta
+      property="og:description"
+      content="Adel Shabayek is a creative web designer and developer specializing in modern, responsive websites and digital experiences — showcased in his professional portfolio.
+"
+    />
+    <title>Modern eCommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Cart Sidebar -->
-  <div class="cart-sidebar" id="cart-sidebar">
-    <h4>Shopping Cart</h4>
-    <input type="text" class="form-control mb-3" placeholder="Enter your name" id="user-name">
-    <div id="cart-items">No items added.</div>
-    <button class="btn btn-secondary mt-3" onclick="toggleCart()">Close</button>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="Logo">
-      </a>
-      <div class="cart-icon me-3" onclick="toggleCart()">
-        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="30" alt="Cart">
-        <div class="cart-count" id="cart-count">0</div>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <h4>Shopping Cart</h4>
+      <input
+        type="text"
+        class="form-control mb-3"
+        placeholder="Enter your name"
+        id="user-name"
+      />
+      <div id="cart-items">No items added.</div>
+      <button class="btn btn-secondary mt-3" onclick="toggleCart()">
+        Close
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
     </div>
-  </nav>
 
-  <!-- Products Section -->
-  <section id="products" class="container py-5">
-    <h2 class="text-center mb-5 fade-in">Featured Products</h2>
-    <div class="row g-4">
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product1.jpg" class="img-fluid" alt="Stylish Backpack" >
-          <h5 class="mt-3">Stylish Backpack</h5>
-          <p>$39.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+        <div class="cart-icon me-3" onclick="toggleCart()">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+            width="30"
+            alt="Cart"
+          />
+          <div class="cart-count" id="cart-count">0</div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product2.jpg" class="img-fluid" alt="Leather Wallet">
-          <h5 class="mt-3">Leather Wallet</h5>
-          <p>$19.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product3.jpg" class="img-fluid" alt="Wireless Headphones">
-          <h5 class="mt-3">Wireless Headphones</h5>
-          <p>$59.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product4.jpg" class="img-fluid" alt="Smart Watch">
-          <h5 class="mt-3">Smart Watch</h5>
-          <p>$99.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product5.jpg" class="img-fluid" alt="Minimalist Shoes">
-          <h5 class="mt-3">Minimalist Shoes</h5>
-          <p>$49.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 fade-in">
-        <div class="product-card">
-          <img src="img/product6.jpg" class="img-fluid" alt="Gaming Mouse">
-          <h5 class="mt-3">Gaming Mouse</h5>
-          <p>$29.99</p>
-          <button class="btn btn-primary w-100 add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      &copy; 2025 My eCommerce Store. All rights reserved.
-    </div>
-  </footer>
+    <!-- Products Section -->
+    <section id="products" class="container py-5">
+      <h2 class="text-center mb-5 fade-in">Featured Products</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img
+              src="img/product1.jpg"
+              class="img-fluid"
+              alt="Stylish Backpack"
+            />
+            <h5 class="mt-3">Stylish Backpack</h5>
+            <p>$39.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img
+              src="img/product2.jpg"
+              class="img-fluid"
+              alt="Leather Wallet"
+            />
+            <h5 class="mt-3">Leather Wallet</h5>
+            <p>$19.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img
+              src="img/product3.jpg"
+              class="img-fluid"
+              alt="Wireless Headphones"
+            />
+            <h5 class="mt-3">Wireless Headphones</h5>
+            <p>$59.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img src="img/product4.jpg" class="img-fluid" alt="Smart Watch" />
+            <h5 class="mt-3">Smart Watch</h5>
+            <p>$99.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img
+              src="img/product5.jpg"
+              class="img-fluid"
+              alt="Minimalist Shoes"
+            />
+            <h5 class="mt-3">Minimalist Shoes</h5>
+            <p>$49.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 fade-in">
+          <div class="product-card">
+            <img src="img/product6.jpg" class="img-fluid" alt="Gaming Mouse" />
+            <h5 class="mt-3">Gaming Mouse</h5>
+            <p>$29.99</p>
+            <button class="btn btn-primary w-100 add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/custom.js"></script>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        &copy; 2025 My eCommerce Store. All rights reserved.
+      </div>
+    </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
